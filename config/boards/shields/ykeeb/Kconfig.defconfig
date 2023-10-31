@@ -4,7 +4,7 @@ CONFIG_ZMK_SLEEP=y
 if SHIELD_YKEEB_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "Ykeeb"
+    default "WhyBoard"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
