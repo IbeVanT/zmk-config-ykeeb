@@ -29,6 +29,11 @@
     acceleration-exponent=<2>;
 };
 
+&lt {
+    tapping-term-ms = <150>;
+};
+
+
 
 / {
 
