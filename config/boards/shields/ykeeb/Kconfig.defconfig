@@ -9,9 +9,11 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
-config CONFIG_ZMK_MOUSE=y
+config CONFIG_ZMK_MOUSE
+    default y
 
-config CONFIG_ZMK_SETTINGS_RESET_ON_START=y
+config CONFIG_ZMK_SETTINGS_RESET_ON_START
+    default y
 
 endif
 
