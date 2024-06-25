@@ -1,5 +1,7 @@
 CONFIG_BT_GATT_ENFORCE_SUBSCRIPTION=n
 CONFIG_ZMK_SLEEP=y
+CONFIG_ZMK_SETTINGS_RESET_ON_START=y
+CONFIG_ZMK_MOUSE=y
 
 if SHIELD_YKEEB_LEFT
 
@@ -7,12 +9,6 @@ config ZMK_KEYBOARD_NAME
     default "WhyBoard"
 
 config ZMK_SPLIT_ROLE_CENTRAL
-    default y
-
-config CONFIG_ZMK_MOUSE
-    default y
-
-config CONFIG_ZMK_SETTINGS_RESET_ON_START
     default y
 
 endif
