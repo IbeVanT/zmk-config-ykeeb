@@ -55,6 +55,19 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C) // €
             };
         };
     
+    macros {
+        eszett: eszett {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+                = <&macro_press   &kp LALT>
+                , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N3>
+                , <&macro_release &kp LALT>
+                ;
+        };
+    };
 
 
     keymap {
@@ -99,8 +112,8 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C) // €
             label = "Navigation";
 
             bindings = <
-    &trans      &trans    &curr_euro     &trans    &trans                                      &kp RC(Y)            &kp RC(V)       &kp RC(C)        &kp RC(V)         &kp RC(Z)
-    &trans      &LA(0223)    &trans     &trans    &trans                                      &kp CAPS           &kp LEFT_ARROW       &kp DOWN_ARROW        &kp UP_ARROW          &kp RIGHT_ARROW 
+    &trans      &trans    &trans     &trans    &trans                                      &kp RC(Y)            &kp RC(V)       &kp RC(C)        &kp RC(V)         &kp RC(Z)
+    &trans      &eszett    &trans     &trans    &trans                                      &kp CAPS           &kp LEFT_ARROW       &kp DOWN_ARROW        &kp UP_ARROW          &kp RIGHT_ARROW 
     &trans      &trans    &trans     &trans    &trans                                      &kp INSERT        &kp HOME       &kp PAGE_DOWN         &kp PAGE_UP        &kp END
                                   &none    &none     &none              &kp RET         &kp BSPC       &kp DEL
             >;
