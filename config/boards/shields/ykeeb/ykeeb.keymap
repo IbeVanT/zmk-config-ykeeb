@@ -100,7 +100,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C) // €
 
             bindings = <
     &trans      &trans    &curr_euro     &trans    &trans                                      &kp RC(Y)            &kp RC(V)       &kp RC(C)        &kp RC(V)         &kp RC(Z)
-    &trans      &de_eszett    &trans     &trans    &trans                                      &kp CAPS           &kp LEFT_ARROW       &kp DOWN_ARROW        &kp UP_ARROW          &kp RIGHT_ARROW 
+    &trans      &LA(0223)    &trans     &trans    &trans                                      &kp CAPS           &kp LEFT_ARROW       &kp DOWN_ARROW        &kp UP_ARROW          &kp RIGHT_ARROW 
     &trans      &trans    &trans     &trans    &trans                                      &kp INSERT        &kp HOME       &kp PAGE_DOWN         &kp PAGE_UP        &kp END
                                   &none    &none     &none              &kp RET         &kp BSPC       &kp DEL
             >;
