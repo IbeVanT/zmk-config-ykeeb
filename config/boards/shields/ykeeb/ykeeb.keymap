@@ -55,8 +55,8 @@
         eszett: eszett {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <5>;
+            tap-ms = <5>;
             bindings
                 = <&macro_press   &kp LALT>
                 , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N3>
